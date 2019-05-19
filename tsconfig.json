@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "allowJs": true,
+    "target": "es5",
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
+  },
+  "include": [
+    "./src/**.*",
+    "./data/currency.json", "src/services/toyRobot.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ]
+}
