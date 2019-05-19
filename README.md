@@ -1,5 +1,5 @@
 # robot-simulator
-This project simulates the movement of a robot placed on a five by five grid.
+This project simulation of a toy robot moving on a square tabletop, of dimensions five units by five units. There are no other obstructions on the table surface. The robot is free to roam around the surface of the table but will be prevented from falling to destruction. Any movement that would result in the robot falling from the table will be restricted, however further valid movement commands will be allowed.
 
 
 The application uses the following technologies:
@@ -19,9 +19,14 @@ There are five valid commands for the robot:
 ```
 - PLACE X,Y,F     - places the robot on the tabletop. X and Y is between 0 and 4 and F can be North,                    South, East or West
 - MOVE            - Moves the robot one unit towards the direction it is facing
-- LEFT            - Rotates the robot by 90 degrees to theleft (anticlockwise)
+- LEFT            - Rotates the robot by 90 degrees to the left (anticlockwise)
 - RIGHT           - Rotates the robot by 90 degrees to the right (clockwise)
 - REPORT          - Reports the current position of the robot 
+```
+
+Commands can also be read from a file. <b>The file path is relative to the src directory</b>. Pass the file path as an argument shown below.
+```bash
+npm start commands.txt
 ```
 
 ## Scripts
