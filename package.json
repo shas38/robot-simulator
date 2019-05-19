@@ -8,9 +8,9 @@
   "scripts": {
     "eslint": "eslint",
     "test": "jest",
+    "coverage": "jest --coverage",
     "build": "tsc",
     "build:watch": "tsc --w",
-    "dev": "nodemon",
     "start": "ts-node ./src/app.ts"
   },
   "dependencies": {
